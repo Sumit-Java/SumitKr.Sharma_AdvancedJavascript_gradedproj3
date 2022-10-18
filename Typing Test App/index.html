@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Typing Test Game</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="app">
+            <div class="container">
+                <header>
+                    <h1>Test Your Typing Speed</h1>
+                </header>
+                <div class="units">
+                    <div class="box-style unit toggle-view">
+                        <p class="unit-title">WPM</p>
+                        <P class="unit-value" id="wpm">0</P>
+                    </div>
+                    <div class="box-style unit toggle-view">
+                        <p class="unit-title">CPM</p>
+                        <P class="unit-value" id="cpm">0</P>
+                    </div>
+
+                    <div class="box-style unit">
+                        <p class="unit-title">ERRORS</p>
+                        <P class="unit-value" id="errors">0</P>
+                    </div>
+                    <div class="box-style unit">
+                        <p class="unit-title">TIME</p>
+                        <P class="unit-value time">60s</P>
+                    </div>
+                    <div class="box-style unit">
+                        <p class="unit-title">% ACCURACY</p>
+                        <P class="unit-value" id="accuracy">100</P>
+                    </div>
+                </div>
+                <div class="demo">
+                    <p class="box-style demo-text">Demo text</p>
+                </div>
+                <div class="entry-box" >
+                    <textarea id="feeder" class="box-style entry" cols="30" rows="5"  placeholder="Start typing here..."></textarea>
+                </div>
+                <div class="button-container">
+                    <button class="box-style restart">Restart</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
